@@ -47,4 +47,4 @@ jobs:
         run: aws s3api list-buckets
         
       - name: Subir archivos al bucket
-        run: aws s3api cp funciones.py s3://bucket-function-test/funciones.py
+        run: aws s3 cp funciones.py s3://bucket-function-test/
